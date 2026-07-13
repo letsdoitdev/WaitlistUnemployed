@@ -3,8 +3,8 @@
    Find both in your Supabase dashboard:
    Project Settings -> API -> Project URL + anon public key
    ============================================================ */
-const SUPABASE_URL = "https://YOUR-PROJECT-REF.supabase.co"; // <-- replace
-const SUPABASE_ANON_KEY = "YOUR-SUPABASE-ANON-KEY";          // <-- replace
+const SUPABASE_URL = "https://oobzltpvehifjlxolpjd.supabase.co"; // <-- replace
+const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9vYnpsdHB2ZWhpZmpseG9scGpkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODM5MDA4MzgsImV4cCI6MjA5OTQ3NjgzOH0.-vS-9Zg8f-7LjEJua2YqyUzUtEzhpNWDDYF0voe5mSA";          // <-- replace
 /* ============================================================ */
 
 const form = document.getElementById("waitlist-form");
