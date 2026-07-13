@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Unemployed — The Side Quest App</title>
+  <meta name="description" content="An IRL adventure generator for you and your friends. Real-world side quests. Coming soon. Join the waitlist.">
+  <meta property="og:title" content="Unemployed — The Side Quest App">
+  <meta property="og:description" content="Your life is a lobby screen. We're the start button. Join the waitlist.">
+  <meta name="theme-color" content="#0a0a0b">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230a0a0b'/%3E%3Cpath d='M11 8l12 8-12 8z' fill='%23c8ff2e'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Unbounded:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <main>
+    <!-- 1. HERO -->
+    <header class="hero">
+      <p class="eyebrow anim" style="--d:0">pre-launch waitlist</p>
+      <h1 class="title anim" style="--d:1">UNEMPLOYED<span class="cursor" aria-hidden="true">_</span></h1>
+      <p class="tagline anim" style="--d:2">the side quest app</p>
+      <p class="hook anim" style="--d:3">Your life is stuck on the <span class="accent">lobby screen.</span></p>
+      <p class="sub anim" style="--d:4">An IRL adventure generator for you and your friends. Real side quests, out in the actual world. We write the plot. You go outside.</p>
+
+      <!-- 3. WAITLIST FORM -->
+      <div class="signup anim" style="--d:5">
+        <form id="waitlist-form" novalidate>
+          <label class="sr-only" for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="your name" autocomplete="name" maxlength="80">
+
+          <label class="sr-only" for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="your email" autocomplete="email" maxlength="254">
+
+          <!-- honeypot: humans never see this. bots, be honest. -->
+          <div class="hp" aria-hidden="true">
+            <label for="website">Website</label>
+            <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+          </div>
+
+          <button id="submit-btn" type="submit">claim my spot</button>
+          <p id="form-msg" class="form-msg" role="status" aria-live="polite"></p>
+        </form>
+
+        <div id="success" class="success" hidden>
+          <p class="success-title">you're in.</p>
+          <p id="success-line" class="success-line">We'll email you when the portal opens. Until then, rot responsibly — it's your last chance.</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- 2. TEASERS -->
+    <section class="teasers" aria-label="What's coming">
+      <h2 class="section-label">patch notes from the future</h2>
+
+      <article class="teaser">
+        <span class="teaser-num" aria-hidden="true">01</span>
+        <h3>summon a quest</h3>
+        <p>One tap. You and the crew get a mission in the real world. No planning committee. No &ldquo;we should hang soon.&rdquo; Just go.</p>
+      </article>
+
+      <article class="teaser">
+        <span class="teaser-num" aria-hidden="true">02</span>
+        <h3>claim the W</h3>
+        <p>Complete quests. Log them. Build a permanent record proving you did, in fact, leave the house.</p>
+      </article>
+
+      <article class="teaser">
+        <span class="teaser-num" aria-hidden="true">03</span>
+        <h3>weekend lore</h3>
+        <p>Saturdays used to end with &ldquo;we watched something, i guess.&rdquo; Now they end in stories you'll be retelling for years.</p>
+      </article>
+    </section>
+  </main>
+
+  <!-- 4. FOOTER -->
+  <footer>
+    <p><span class="footer-name">UNEMPLOYED</span> — coming soon</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
