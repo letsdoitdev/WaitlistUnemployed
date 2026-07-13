@@ -91,7 +91,6 @@ main {
 
 .cursor {
   color: var(--accent);
-  animation: blink 1.1s steps(1) infinite;
 }
 
 .tagline {
@@ -181,13 +180,13 @@ button:disabled {
   cursor: wait;
 }
 
+/* stays in layout (and in the accessibility tree) even while empty,
+   so aria-live announcements fire and nothing jumps on retry */
 .form-msg {
   min-height: 1.4rem;
   font-size: 0.9rem;
   color: var(--error);
 }
-
-.form-msg:empty { display: none; }
 
 /* honeypot: parked off-screen. if you can read this, don't fill it in. */
 .hp {
@@ -286,10 +285,6 @@ footer {
 
 /* ---------- motion ---------- */
 
-@keyframes blink {
-  50% { opacity: 0; }
-}
-
 @keyframes rise {
   from {
     opacity: 0;
@@ -311,9 +306,6 @@ footer {
   .anim {
     animation: none;
     opacity: 1;
-  }
-  .cursor {
-    animation: none;
   }
   .teaser,
   button,
